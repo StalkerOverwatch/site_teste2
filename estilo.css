@@ -1,0 +1,249 @@
+/*==========================LAYOUT=================================*/
+
+/**********************--ANIMATIOM-- ******************************/
+
+/* * * --Fade in Up-- * * */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    
+}
+/******************************--FRAME--*********************************/
+
+/* * * --Navbar-- * * */
+
+.img-logo{
+  height: 40px;
+  width: 132px;
+  display: block;
+  background: url(imagens/spotify.svg) no-repeat;
+  background-size: contain;
+  color: transparent;
+  
+}
+
+nav.navbar-trans{
+  background: rgba(0,0,0,0.6) ;
+  padding: 15px 0px;
+  border: none;
+}
+.navbar-brand{
+  
+  padding: 5px 15px; 
+}
+
+.divide{
+  width: 1px;
+  height: 16px;
+  background: white;
+  margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer a{ /**O sinal de > selecionar primeiro filho imediato do elemento */
+  color:white;
+  
+}
+.navbar-inverse .navbar-nav>li>a, footer a:hover { /**O sinal de > selecionar primeiro filho imediato do elemento */
+  color: #9bf0e1;
+  background: none;
+}
+
+/* * * --Background-- * * */
+html, body, .cap{
+  height: 100%;
+  overflow: auto;
+}
+
+body{
+  font-family: "Helvetica", "Arial", "sans-serif";
+  background: url(imagens/capa.png), 
+              url('imagens/ruido.png'),
+              linear-gradient(50deg, #ff4169,#7c26f8);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  
+}
+.cap{
+  border: 1px solid red;
+  display: table;
+  width: 100%;
+}
+.text-cap{
+  text-align: center;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  
+}
+
+/* * * --Background-Button-- * * */
+
+.btn-custom{
+  color: white;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  text-transform: uppercase;
+  transition: background 0.5s, color 0.9s;
+}
+.btn-1{
+  background: #7c25f8;
+  border: 2px solid #7c25f8;
+}
+.btn-1:hover{
+  background: #6207e3;
+  color: white;
+}
+ /********************/ 
+
+.btn-2{
+  background: ;
+  border: solid 2px white;  
+}
+.btn-2:hover{
+  background: white;
+  color: black;
+}
+
+/* * * --Container-- * * */
+
+.services{
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+.img-adj{
+ 
+	padding: 5px 0px 20px 0px;
+  
+}
+.title-color{
+  color: #7c25f8;
+}
+h2{
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+h3{
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+/* * * --/Container-- * * */
+
+/* * * --Container-- * * */
+
+.resoucers{
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* * * --Footer-- * * */
+
+footer{
+  background: #000;
+  padding: 50px 0px 20px 0px;
+  position: relative;
+}
+
+footer h4{
+  color: #919496;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+footer .nav a:hover{
+  background: none
+  
+}
+
+.item{
+  float: right;
+  margin: 25px;
+}
+/***************TIPOGRAPHY********************/
+
+h1{
+  
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
+}
+
+.resoucers h2{
+      color: white
+  }
+.resoucers h3{
+      color: #9bf0e1
+  }
+.resoucers p{
+      color: white;
+      padding-bottom: 10px;
+      font-weight: 600;
+      letter-spacing: -0.05em;
+      
+  }
+
+.rotate{
+  transform: rotate(30deg);
+  padding-left: 75px
+}
+
+@media screen and (max-width: 767px){
+  h1{
+    font-size: 50px;
+  }
+  .btn-custom{
+    margin: 10px 15px;
+  }
+  
+ 
+	
+}
+@media screen and (min-width: 768px){
+  h1{
+    font-size: 100px;
+  }
+  .btn-custom{
+    margin: 0px 10px;
+  }
+}
+    
+  
